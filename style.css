@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #dffcff;
+    font-family: Arial, sans-serif;
+}
+
+.profile-card {
+    width: 360px;
+    padding: 25px 25px 30px;
+    background: #ffffff;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 15px;
+    border: 1.5px solid #222;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+
+.avatar {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Hair */
+.hair {
+    position: absolute;
+    width: 45px;
+    height: 35px;
+    background: #111;
+    border-radius: 50% 50% 35% 35%;
+    top: 10px;
+    left: 27px;
+    z-index: 3;
+}
+
+/* Face */
+.face {
+    position: absolute;
+    width: 43px;
+    height: 50px;
+    background: #f1c7a5;
+    border-radius: 45% 45% 50% 50%;
+    top: 22px;
+    left: 28px;
+    z-index: 2;
+}
+
+/* Body */
+.body {
+    position: absolute;
+    width: 75px;
+    height: 55px;
+    background: #263b4d;
+    border-radius: 45px 45px 0 0;
+    bottom: -8px;
+    left: 12px;
+}
+
+/* Tie */
+.tie {
+    position: absolute;
+    width: 9px;
+    height: 35px;
+    background: #b71919;
+    top: 64px;
+    left: 45px;
+    transform: rotate(1deg);
+    z-index: 4;
+}
+
+.profile-card h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #222;
+}
+
+.job {
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #555;
+}
+
+.location {
+    margin-bottom: 18px;
+    font-size: 16px;
+    color: #777;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+button {
+    width: 100px;
+    height: 38px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.follow-btn {
+    border: 1px solid #007bff;
+    background: #087ff5;
+    color: white;
+}
+
+.message-btn {
+    border: 1px solid #7aaec5;
+    background: white;
+    color: #50809a;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
